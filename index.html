@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBAA Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DBAA Music</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.youtube.com/@dbaaofficial5412" target="_blank">YouTube</a></li>
+                <li><a href="https://music.apple.com/" target="_blank">Apple Music</a></li>
+                <li><a href="https://open.spotify.com/" target="_blank">Spotify</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Watch Our Latest Music Video</h2>
+     
+
+        <!-- Container to Align Images & Video -->
+        <div class="media-container">
+            <img src="image3.jpg" alt="DBAA Image 0" class="side-image">
+            
+            <!-- YouTube Video (Muted Autoplay) -->
+            <iframe id="youtubeVideo" width="800" height="450" 
+                    src="https://www.youtube.com/embed/IkX3HpTyjBk?autoplay=1&loop=1&controls=1&mute=1" 
+                    title="DBAA Music Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+
+            <img src="image1.jpg" alt="DBAA Image 1" class="side-image">
+        </div>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 DBAA Music. All Rights Reserved.</p>
+    
+    <!-- Social Media Icons with Links -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://music.apple.com" target="_blank">
+            <img src="apple.png" alt="Apple Music">
+        </a>
+        <a href="https://www.youtube.com/@dbaaofficial5412" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <img src="tik-tok.png" alt="TikTok">
+        </a>
+        <a href="https://open.spotify.com" target="_blank">
+            <img src="spotify.png" alt="Spotify">
+        </a>
+    </div>
+</footer>
+
+
+    <!-- JavaScript to Enable Sound After User Clicks -->
+    <script>
+        document.addEventListener("click", function() {
+            var video = document.getElementById("youtubeVideo");
+            video.src = "https://www.youtube.com/embed/IkX3HpTyjBk?autoplay=1&loop=1&controls=1&mute=0";
+        }, { once: true }); 
+    </script>
+
+</body>
+</html>
+

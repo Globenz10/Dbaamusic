@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+h1 {
+    color: teal;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+main {
+    margin: 40px auto;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #222;
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    position: relative;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Social Icons Styling */
+.social-icons img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for Media Container */
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Space between images and video */
+    margin-top: 20px;
+}
+
+/* Side Images */
+.side-image {
+    width: 400px;  /* Fixed width */
+    height: 675px; /* Fixed height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 15px;  /* Optional: Rounded corners */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Slower fade-in animation */
+}
+
+/* Left Image Animation Delay */
+.side-image:first-child {
+    animation-delay: 0.5s; /* Slightly delayed for a smoother effect */
+}
+
+/* Right Image Animation Delay */
+.side-image:last-child {
+    animation-delay: 1s;
+}
+
+/* Hover Effect */
+.side-image:hover {
+    transform: scale(1.15); /* Enlarge slightly on hover */
+    box-shadow: 0px 0px 25px rgba(0, 0, 255, 0.8); /* Stronger blue glow */
+}
+
+/* Slower Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
